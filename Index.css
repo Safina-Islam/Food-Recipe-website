@@ -25,7 +25,7 @@ body {
     background-color: #f58a4c;
     height: 50px;
    width: 450px;
-   margin-left: 300px;
+   margin-left: 500px;
    margin-top: 20px;
        
   }
@@ -104,5 +104,86 @@ body {
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
 
-   
+    button {
+        width: 120px; 
+        height: 40px; 
+        margin-top: 490px;
+        margin-left: 50px;
+        border-radius: 8px;
+        border-color: #faf3f3;
+        font-size: 16px; 
+        padding: 10px; 
+      }
 }
+
+
+footer {
+    background-color: rgba(243, 201, 173, 0.74);
+    color: rgb(14, 13, 13);
+    bottom: 0;
+    width: 100vw;
+    font-size: 16px;
+    margin-top: 50px;
+
+     input,
+  button {
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  button {
+    background-color: #0c0c0c;
+    color: #ffffff;
+  }
+  }
+  footer * {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+  .row {
+    padding: 1em 1em;
+  }
+  .row.primary {
+    display: grid;
+    grid-template-columns: 3fr 2fr 4fr;
+    align-items: stretch;
+  }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+  }
+  h3 {
+    width: 100%;
+    text-align: left;
+    color: rgb(66, 63, 63);
+    font-size: 1.4em;
+    white-space: nowrap;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+  ul li a {
+    color: #050505;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: #faf3f3;
+  }
+  .about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+  }

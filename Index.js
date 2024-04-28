@@ -27,7 +27,29 @@ function connect () {
     }
 
 
-
+    if (items.length > 5) {
+        var showAllBtn = document.createElement("button");
+        showAllBtn.textContent = "SHOW ALL";
+        
+        showAllBtn.addEventListener("click", function() {
+            // Display all items
+            oldContent.textContent = ""; // Clear previous content
+            items.forEach(item => {
+                var newDiv = document.createElement("div");
+                newDiv.innerHTML = 
+                         `Meal ID: <b>  ${item.idMeal}</b> <br>
+                          Meal Title: <b> ${item.strMeal}</b> <br>
+                          Catagory: <b> ${item.strCategory}</b> <br>
+                          <img src="${item.strMealThumb}"> <br>
+                     <b>  Cooking Instructions: </b> ${item.strInstructions} <br> <br>`;
+                newDiv.classList.add("innerStyle");
+                oldContent.appendChild(newDiv);
+            });
+            // Hide the "SHOW ALL" button
+            this.style.display = "none";
+        });
+        oldContent.appendChild(showAllBtn);
+    }
 
 
 
