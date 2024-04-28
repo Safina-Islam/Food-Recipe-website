@@ -85,3 +85,24 @@ body {
       width: 1350px;
   }
 }
+
+.innerStyle img {
+
+    width: 200px;
+}
+
+.innerStyle {
+    margin: 10px;
+    padding: 10px;
+    background-color: bisque;
+    border: 1px solid grey;
+    border-radius: 15px;
+
+}
+
+#container {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+
+   
+}
